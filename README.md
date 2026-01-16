@@ -85,8 +85,9 @@ The emphasis is on **efficient data handling, traversal, modification, and edge-
 
 ---
 
-## 📁 Folder Structure
----
+📁 Folder Structure
+
+collections/
 ├── List/
 ├── Set/
 ├── Queue/
