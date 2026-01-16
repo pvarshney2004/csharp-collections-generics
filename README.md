@@ -79,6 +79,120 @@ This branch focuses on **Generics in C#**, demonstrating how to write **type-saf
 
 ---
 
+### 🔹 `collections` branch
+This branch focuses on **C# Collection Libraries**, covering practical usage of  `List`, `Set`, `Queue`, and `Map (Dictionary)` through **problem-solving and real-world scenarios**.  
+The emphasis is on **efficient data handling, traversal, modification, and edge-case management**.
+
+---
+
+## 📁 Folder Structure
+---
+├── List/
+├── Set/
+├── Queue/
+├── Map/
+└── Collections_Extra_Questions/
+
+---
+
+## 📂 List    
+Problems based on the `List` interface focusing on element traversal, manipulation, and order preservation.
+
+**Problem Statements:**  
+- Reverse a list without using built-in reverse methods  
+- Find frequency of elements using a dictionary  
+- Rotate elements of a list by N positions  
+- Remove duplicates while preserving order  
+- Find the Nth element from the end of a linked list  
+
+---
+
+## 📂 Set   
+Problems emphasizing uniqueness, set operations, and comparisons using `Set` collections.
+
+**Problem Statements:**  
+- Check whether two sets are equal  
+- Find union and intersection of two sets  
+- Compute symmetric difference  
+- Convert a set into a sorted list  
+- Check if one set is a subset of another  
+
+---
+
+## 📂 Queue   
+Problems demonstrating FIFO behavior and priority-based processing using queues.
+
+**Problem Statements:**  
+- Reverse a queue using only queue operations  
+- Generate first N binary numbers using a queue  
+- Hospital triage system using a priority queue  
+
+---
+
+## 📂 Map  
+Problems focused on key–value data handling using dictionaries.
+
+**Problem Statements:**  
+- Count word frequency from text input  
+- Invert a dictionary to map values to multiple keys  
+
+---
+
+## 📂 Collections Extra Questions (Advanced Scenarios)
+
+### Chat Message Cleanup System  
+**Data Structures Used:**  
+`Dictionary<string, LinkedList<Message>>`
+
+**Tasks:**  
+- Delete messages:
+  - Older than 30 days  
+  - Read and not starred  
+- Fetch last `N` valid messages efficiently  
+
+**Edge Cases:**  
+- Deleting while traversing  
+- Message exactly 30 days old  
+- All messages deleted  
+- Order preservation  
+- Null references  
+
+---
+
+### Student Performance Analyzer  
+**Data Structures Used:**  
+- `List<Student>`  
+- `Dictionary<int, List<int>>` (RollNo → Marks)
+
+**Tasks:**  
+- Calculate average marks  
+- Pass criteria:
+  - Average ≥ 40  
+  - No subject < 30  
+- Display:
+  - Students passed overall but failed in ≥1 subject  
+  - Top scorer per subject  
+- Remove students failing 3 consecutive exams  
+
+**Edge Cases:**  
+- No marks recorded  
+- Boundary marks (30, 40)  
+- Different subject counts  
+- Safe removal during iteration  
+- Duplicate roll numbers  
+
+---
+
+## 🎯 Learning Outcomes
+
+- Master List, Set, Queue, and Dictionary usage  
+- Handle real-world edge cases safely  
+- Improve data traversal and mutation logic  
+- Strengthen problem-solving with collections  
+- Write efficient and maintainable C# code
+  
+---
+
 ## 👤 Author
 **Prashant Varshney**  
 B.Tech CSE (Data Analytics) 
