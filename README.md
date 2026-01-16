@@ -160,27 +160,145 @@ Problems focused on key–value data handling using dictionaries.
 
 ---
 
-### Student Performance Analyzer  
-**Data Structures Used:**  
-- `List<Student>`  
+### 1️⃣ Student Performance Analyzer
+**Problem Statement:**  
+Analyze student performance across multiple subjects.
+
+**Collections Used:**
+- `List<Student>`
 - `Dictionary<int, List<int>>` (RollNo → Marks)
 
-**Tasks:**  
-- Calculate average marks  
+**Tasks:**
+- Calculate average marks per student
 - Pass criteria:
-  - Average ≥ 40  
-  - No subject < 30  
+  - Average ≥ 40
+  - No subject mark < 30
 - Display:
-  - Students passed overall but failed in ≥1 subject  
-  - Top scorer per subject  
-- Remove students failing 3 consecutive exams  
+  - Students who passed overall but failed in at least one subject
+  - Top scorer of each subject
+- Remove students who failed 3 consecutive exams
 
-**Edge Cases:**  
-- No marks recorded  
-- Boundary marks (30, 40)  
-- Different subject counts  
-- Safe removal during iteration  
-- Duplicate roll numbers  
+**Edge Cases:**
+- No marks recorded
+- Marks exactly 30 or 40
+- Different subject counts
+- Removing while iterating
+- Duplicate roll numbers
+
+---
+
+### 2️⃣ Chat Message Cleanup System
+**Problem Statement:**  
+Implement cleanup logic for chat messages.
+
+**Collections Used:**
+- `Dictionary<string, LinkedList<Message>>`
+
+**Tasks:**
+- Delete messages:
+  - Older than 30 days
+  - Read and not starred
+- Fetch last **N valid messages** efficiently
+
+**Edge Cases:**
+- Deleting while traversing `LinkedList`
+- Message exactly 30 days old
+- All messages deleted
+- Maintaining message order
+- Null message references
+
+---
+
+### 3️⃣ Bank Transaction Fraud Detector
+**Problem Statement:**  
+Detect suspicious banking transactions.
+
+**Collections Used:**
+- `Dictionary<long, List<Transaction>>`
+- `Queue<Transaction>`
+
+**Tasks:**
+- Flag account if:
+  - More than 3 withdrawals in 10 minutes
+  - Withdrawal exceeds 80% of balance
+- Generate suspicious transaction report
+
+**Edge Cases:**
+- Exact 10-minute boundary
+- Balance updates after transactions
+- Same timestamp transactions
+- Zero balance withdrawal
+- Queue cleanup issues
+
+---
+
+### 4️⃣ Library Fine Calculation Engine
+**Problem Statement:**  
+Calculate fines for late book returns.
+
+**Collections Used:**
+- `Dictionary<int, List<IssueRecord>>`
+
+**Tasks:**
+- Fine rules:
+  - ₹2/day for first 7 days
+  - ₹5/day thereafter
+  - No fine on Sundays
+  - Maximum fine ₹500
+- Generate monthly fine report
+- Identify frequent defaulters
+
+**Edge Cases:**
+- Book returned on Sunday
+- Return before due date
+- Fine exceeding cap
+- Month boundary calculation
+- Multiple books per student
+
+---
+
+### 5️⃣ Inventory Reorder Prediction
+**Problem Statement:**  
+Predict when inventory reordering is required.
+
+**Collections Used:**
+- `Dictionary<string, Queue<int>>`
+
+**Tasks:**
+- Maintain last 7 days sales data
+- Calculate moving average
+- Trigger reorder if average sales > stock
+- Predict stock-out date
+
+**Edge Cases:**
+- Less than 7 days of data
+- Zero sales days
+- Stock equals average
+- Queue overflow
+- Negative stock values
+
+---
+
+### 6️⃣ Cab Driver Assignment System
+**Problem Statement:**  
+Assign cab drivers optimally based on distance and rating.
+
+**Collections Used:**
+- `List<Driver>`
+- `SortedList<double, Driver>`
+
+**Tasks:**
+- Assign nearest available driver
+- If distance equal, choose highest rating
+- Handle ride cancellation and reassignment
+- Penalize drivers with frequent cancellations
+
+**Edge Cases:**
+- No drivers available
+- Equal distance and rating
+- Driver unavailable mid-assignment
+- Floating-point comparison issues
+- Reassigning the same driver
 
 ---
 
