@@ -86,14 +86,14 @@ The emphasis is on **efficient data handling, traversal, modification, and edge-
 ---
 
 📁 Folder Structure
-
+```
 collections/
 ├── List/
 ├── Set/
 ├── Queue/
 ├── Map/
 └── Collections_Extra_Questions/
-
+```
 ---
 
 ## 📂 List    
